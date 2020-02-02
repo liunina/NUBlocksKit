@@ -1,0 +1,15 @@
+use_frameworks!
+
+source 'git@git.iliunian.cn:apple/NLSpecs.git'
+source 'https://cdn.cocoapods.org/'
+platform :ios, '8.0'
+
+target 'NUBlocksKit_Example' do
+  pod 'NUBlocksKit', :path => '../'
+
+  target 'NUBlocksKit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end

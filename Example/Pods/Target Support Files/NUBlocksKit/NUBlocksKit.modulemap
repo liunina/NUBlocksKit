@@ -1,0 +1,6 @@
+framework module NUBlocksKit {
+  umbrella header "NUBlocksKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

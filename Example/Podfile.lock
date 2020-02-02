@@ -1,0 +1,45 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - NUBlocksKit (1.0):
+    - NUBlocksKit/All (= 1.0)
+  - NUBlocksKit/All (1.0):
+    - NUBlocksKit/Core
+    - NUBlocksKit/DynamicDelegate
+    - NUBlocksKit/MessageUI
+    - NUBlocksKit/QuickLook
+    - NUBlocksKit/UIKit
+  - NUBlocksKit/Core (1.0)
+  - NUBlocksKit/DynamicDelegate (1.0)
+  - NUBlocksKit/MessageUI (1.0):
+    - NUBlocksKit/Core
+    - NUBlocksKit/DynamicDelegate
+  - NUBlocksKit/QuickLook (1.0):
+    - NUBlocksKit/Core
+    - NUBlocksKit/DynamicDelegate
+  - NUBlocksKit/UIKit (1.0):
+    - NUBlocksKit/Core
+    - NUBlocksKit/DynamicDelegate
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - NUBlocksKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  NUBlocksKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  NUBlocksKit: 5d1a809f989475728fa460da75a7d9dca20f5d42
+
+PODFILE CHECKSUM: 7e503b10d027bd063b5bfa60ad23c291002dfdd8
+
+COCOAPODS: 1.8.4
