@@ -30,8 +30,6 @@ static const void *BKGestureRecognizerShouldHandleActionKey = &BKGestureRecogniz
 {
 	self = [self initWithTarget:self action:@selector(bk_handleAction:)];
 	if (!self) return nil;
-//	self.delegate = self;
-	self.cancelsTouchesInView = YES;
 	self.bk_handler = block;
 	self.bk_handlerDelay = delay;
 
@@ -99,19 +97,5 @@ static const void *BKGestureRecognizerShouldHandleActionKey = &BKGestureRecogniz
 - (void)bk_cancel
 {
 	self.bk_shouldHandleAction = NO;
-}
-#pragma mark - UIGestureRecognizerDelegate
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
-	return YES;
-}
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
-	return YES;
-}
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
-
-	return NO;
-}
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
-	return NO;
 }
 @end
