@@ -30,7 +30,8 @@ static const void *BKGestureRecognizerShouldHandleActionKey = &BKGestureRecogniz
 {
 	self = [self initWithTarget:self action:@selector(bk_handleAction:)];
 	if (!self) return nil;
-
+//	self.delegate = self;
+	self.cancelsTouchesInView = YES;
 	self.bk_handler = block;
 	self.bk_handlerDelay = delay;
 
@@ -54,14 +55,14 @@ static const void *BKGestureRecognizerShouldHandleActionKey = &BKGestureRecogniz
 	
 	NSTimeInterval delay = self.bk_handlerDelay;
 	CGPoint location = [self locationInView:self.view];
+	UIGestureRecognizerState state = self.state;
 	void (^block)(void) = ^{
 		if (!self.bk_shouldHandleAction) return;
-		handler(self, self.state, location);
+		handler(self, state, location);
 	};
-
+	
 	self.bk_shouldHandleAction = YES;
-
-    [NSObject bk_performAfterDelay:delay usingBlock:block];
+	[NSObject bk_performAfterDelay:delay usingBlock:block];
 }
 
 - (void)bk_setHandler:(void (^)(UIGestureRecognizer *sender, UIGestureRecognizerState state, CGPoint location))handler
@@ -99,5 +100,18 @@ static const void *BKGestureRecognizerShouldHandleActionKey = &BKGestureRecogniz
 {
 	self.bk_shouldHandleAction = NO;
 }
+#pragma mark - UIGestureRecognizerDelegate
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+	return YES;
+}
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer {
+	return YES;
+}
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRequireFailureOfGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer{
 
+	return NO;
+}
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldBeRequiredToFailByGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+	return NO;
+}
 @end

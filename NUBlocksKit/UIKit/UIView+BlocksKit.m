@@ -24,7 +24,7 @@
 
 		UITapGestureRecognizer *tap = obj;
 		BOOL rightTouches = (tap.numberOfTouchesRequired == numberOfTouches);
-		BOOL rightTaps = (tap.numberOfTapsRequired == numberOfTaps);
+		BOOL rightTaps = (tap.numberOfTapsRequired <= numberOfTaps);
 		if (rightTouches && rightTaps) {
 			[gesture requireGestureRecognizerToFail:tap];
 		}
