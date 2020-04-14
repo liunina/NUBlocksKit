@@ -31,7 +31,6 @@
 #import <NUBlocksKit/UIGestureRecognizer+BlocksKit.h>
 #import <NUBlocksKit/UIImage+BlocksKit.h>
 #import <NUBlocksKit/UIImagePickerController+BlocksKit.h>
-#import <NUBlocksKit/UIPopoverController+BlocksKit.h>
 #import <NUBlocksKit/UITextField+BlocksKit.h>
 #import <NUBlocksKit/UIView+BlocksKit.h>
 #import <NUBlocksKit/UITextField+BlocksKit.h>

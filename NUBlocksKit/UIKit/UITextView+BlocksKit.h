@@ -62,13 +62,13 @@
  *
  *  The return value indicates whether the user should interact with the text attachment
  */
-@property (nonatomic, copy) BOOL(^bk_shouldInteractWithTextAttachmentInRangeBlock)(__kindof UITextView *textView, NSTextAttachment *attachment, NSRange range);
+@property (nonatomic, copy) BOOL(^bk_shouldInteractWithTextAttachmentInRangeBlock)(__kindof UITextView *textView, NSTextAttachment *attachment, NSRange range,  UITextItemInteraction interaction);
 
 /**
  *  The block that fires when the user tring to interact with an URL in the given range
  *
  *  The return value indicates whether the receiver should response to the interaction or not
  */
-@property (nonatomic, copy) BOOL(^bk_shouldInteractWithURLInRangeBlock)(__kindof UITextView *textView, NSURL *url, NSRange range);
+@property (nonatomic, copy) BOOL(^bk_shouldInteractWithURLInRangeBlock)(__kindof UITextView *textView, NSURL *url, NSRange range, UITextItemInteraction interaction);
 
 @end

@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NUBlocksKit'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = 'A short description of NUBlocksKit.'
 
   s.description      = <<-DESC
@@ -21,7 +21,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'http://nas.iliunian.com:82/apple/NUBlocksKit.git', :tag => s.version.to_s }
   s.requires_arc          = true
   s.osx.deployment_target = '10.8'
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '10.0'
   s.watchos.deployment_target = '2.0'
 
   s.default_subspec = 'All'
