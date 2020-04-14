@@ -4,23 +4,23 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - NUBlocksKit (0.1.4):
-    - NUBlocksKit/All (= 0.1.4)
-  - NUBlocksKit/All (0.1.4):
+  - NUBlocksKit (1.0.1):
+    - NUBlocksKit/All (= 1.0.1)
+  - NUBlocksKit/All (1.0.1):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
     - NUBlocksKit/MessageUI
     - NUBlocksKit/QuickLook
     - NUBlocksKit/UIKit
-  - NUBlocksKit/Core (0.1.4)
-  - NUBlocksKit/DynamicDelegate (0.1.4)
-  - NUBlocksKit/MessageUI (0.1.4):
+  - NUBlocksKit/Core (1.0.1)
+  - NUBlocksKit/DynamicDelegate (1.0.1)
+  - NUBlocksKit/MessageUI (1.0.1):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
-  - NUBlocksKit/QuickLook (0.1.4):
+  - NUBlocksKit/QuickLook (1.0.1):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
-  - NUBlocksKit/UIKit (0.1.4):
+  - NUBlocksKit/UIKit (1.0.1):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
 
@@ -29,7 +29,7 @@ DEPENDENCIES:
   - NUBlocksKit (from `../`)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  NUBlocksKit: 1d00a7387d15e4395d3607f6dcb9e057f8b1d25b
+  NUBlocksKit: 80bc8a3d12c56945ed838bb6538aa6eea1df8d2c
 
 PODFILE CHECKSUM: ca3e72cb2d78d7c7f1a0b8aa9b3ff67a6450d700
 
