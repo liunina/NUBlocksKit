@@ -8,17 +8,17 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NUBlocksKit'
-  s.version          = '1.0.2'
+  s.version          = '0.1.3'
   s.summary          = 'A short description of NUBlocksKit.'
 
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'http://nas.iliunian.com:82/apple/NUBlocksKit'
+  s.homepage         = 'http://nas.iliunian.com:88/Apple/NUBlocksKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'i19850511@gmail.com' => 'i19850511@gmail.com' }
-  s.source           = { :git => 'http://nas.iliunian.com:82/apple/NUBlocksKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://nas.iliunian.com:88/Apple/NUBlocksKit.git', :tag => s.version.to_s }
   s.requires_arc          = true
   s.osx.deployment_target = '10.8'
   s.ios.deployment_target = '10.0'
