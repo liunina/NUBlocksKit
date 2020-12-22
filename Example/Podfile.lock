@@ -4,23 +4,23 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - NUBlocksKit (0.2.0):
-    - NUBlocksKit/All (= 0.2.0)
-  - NUBlocksKit/All (0.2.0):
+  - NUBlocksKit (1.2.0):
+    - NUBlocksKit/All (= 1.2.0)
+  - NUBlocksKit/All (1.2.0):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
     - NUBlocksKit/MessageUI
     - NUBlocksKit/QuickLook
     - NUBlocksKit/UIKit
-  - NUBlocksKit/Core (0.2.0)
-  - NUBlocksKit/DynamicDelegate (0.2.0)
-  - NUBlocksKit/MessageUI (0.2.0):
+  - NUBlocksKit/Core (1.2.0)
+  - NUBlocksKit/DynamicDelegate (1.2.0)
+  - NUBlocksKit/MessageUI (1.2.0):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
-  - NUBlocksKit/QuickLook (0.2.0):
+  - NUBlocksKit/QuickLook (1.2.0):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
-  - NUBlocksKit/UIKit (0.2.0):
+  - NUBlocksKit/UIKit (1.2.0):
     - NUBlocksKit/Core
     - NUBlocksKit/DynamicDelegate
 
@@ -38,7 +38,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  NUBlocksKit: aff5efcd869bbd138899457e9f3b7e94e2c051f7
+  NUBlocksKit: 85471bd0ffd6790eaacadaf0f2ee625c6bb87ee0
 
 PODFILE CHECKSUM: 84de3e3f10f9b56e810fc1c2bdbb0c257e3d7aa1
 
