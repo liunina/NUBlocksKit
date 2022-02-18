@@ -1,9 +1,9 @@
 {
   "name": "NUBlocksKit",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "summary": "A short description of NUBlocksKit.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "http://nas.iliunian.com:88/Apple/NUBlocksKit",
+  "homepage": "https://github.com/liunina/NUBlocksKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "i19850511@gmail.com": "i19850511@gmail.com"
   },
   "source": {
-    "git": "http://nas.iliunian.com:88/Apple/NUBlocksKit.git",
-    "tag": "1.2.0"
+    "git": "https://github.com/liunina/NUBlocksKit.git",
+    "tag": "2.0.0"
   },
   "requires_arc": true,
   "platforms": {
